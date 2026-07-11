@@ -4,11 +4,11 @@ import { cva } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-semibold ring-offset-white transition-colors',
+  'inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-semibold ring-offset-white transition-colors ',
   {
     variants: {
       variant: {
-        default: 'bg-accent text-primary hover:bg-accent-hover',
+        default: 'bg-accent text-primary  hover:bg-accent-hover',
         primary: 'bg-primary text-white',
         outline:
           'outline border-accent bg-transparent text-accent hover:bg-accent hover:text-primary',
@@ -25,7 +25,7 @@ const buttonVariants = cva(
         md: 'h-[48px] px-6',
         lg: 'h-[56px] px-8 text-sm uppercase tracking-[2px]',
         sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
-        lg: 'h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2',
+        // lg: 'h-14 gap-1.5 px-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2',
         icon: 'size-8',
         'icon-xs':
           "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
